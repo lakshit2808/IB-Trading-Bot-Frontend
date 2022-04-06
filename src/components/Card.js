@@ -1,11 +1,6 @@
 import React, {useState} from 'react'
 
 const Card = ({Object, index, deleteBot}) => {
-    const [modal, setModal] = useState(false);
-
-    const toggle = () => {
-        setModal(!modal);
-    }
 
     const handleDelete = () => {
         deleteBot(index, Object.ticker)
