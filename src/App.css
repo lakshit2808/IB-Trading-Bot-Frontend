@@ -51,5 +51,12 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
-  padding : 40px 100px;
+  padding : 40px 263px;
 }
+
+@media screen and (max-width: 600px) {
+  .task-container{
+    padding : 40px 100px;
+  }
+}
+  

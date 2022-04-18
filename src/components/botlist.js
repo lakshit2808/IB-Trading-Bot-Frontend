@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Popup from './popupmodal/popup';
 import axios from 'axios';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 const BotList = () => {
   const [modal, setModal] = useState(false);
@@ -53,6 +54,7 @@ const BotList = () => {
     <div className='header text-center'>
       <h3>Interactive Broker's Trading Bots</h3>
       <button className='btn btn-primary mt-2'  onClick = {() => setModal(true)}>Create Bot</button>
+      <Link to='/tradehistory' className='btn btn-primary mt-2' style={{marginLeft: "5px"}}>Trade History</Link>
     </div>
 
     <div className='task-container'>
