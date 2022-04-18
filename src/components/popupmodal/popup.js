@@ -42,7 +42,7 @@ const Popup = ({modal, toggle, save}) => {
                 <form>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Ticker:</label>
-                        <input type="text" className = "form-control" placeholder='BTCUSDTPERP' value = {ticker} onChange = {handleChange} name = "ticker"/>
+                        <input type="text" className = "form-control" placeholder='AAPL' value = {ticker} onChange = {handleChange} name = "ticker"/>
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Stop Loss:</label>
@@ -53,8 +53,8 @@ const Popup = ({modal, toggle, save}) => {
                         <input type="number" step="0.001" className = "form-control" placeholder='4.0' value = {takeprofit} onChange = {handleChange} name = "takeprofit"/>
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
-                        <label>Leverage:</label>
-                        <input type="number" step="0.001" className = "form-control" placeholder='5' value = {amount} onChange = {handleChange} name = "amount"/>
+                        <label>Investment:</label>
+                        <input type="number" step="0.001" className = "form-control" placeholder='1000' value = {amount} onChange = {handleChange} name = "amount"/>
                     </div>
                 </form>
                 
