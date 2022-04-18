@@ -28,7 +28,7 @@ const Popup = ({modal, toggle, save}) => {
         taskObj["ticker"] = ticker
         taskObj["StopLoss"] = stoploss
         taskObj["TakeProfit"] = takeprofit
-        taskObj["AmountToBeInvested"] = amount
+        taskObj["leverage"] = amount
         save(taskObj)
 
     }
@@ -42,7 +42,7 @@ const Popup = ({modal, toggle, save}) => {
                 <form>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Ticker:</label>
-                        <input type="text" className = "form-control" placeholder='AAPL' value = {ticker} onChange = {handleChange} name = "ticker"/>
+                        <input type="text" className = "form-control" placeholder='BTCUSDTPERP' value = {ticker} onChange = {handleChange} name = "ticker"/>
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Stop Loss:</label>
@@ -50,11 +50,11 @@ const Popup = ({modal, toggle, save}) => {
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Take Profit:</label>
-                        <input type="number" step="0.001" className = "form-control" placeholder='2.0' value = {takeprofit} onChange = {handleChange} name = "takeprofit"/>
+                        <input type="number" step="0.001" className = "form-control" placeholder='4.0' value = {takeprofit} onChange = {handleChange} name = "takeprofit"/>
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
-                        <label>Investment:</label>
-                        <input type="number" step="0.001" className = "form-control" placeholder='1000' value = {amount} onChange = {handleChange} name = "amount"/>
+                        <label>Leverage:</label>
+                        <input type="number" step="0.001" className = "form-control" placeholder='5' value = {amount} onChange = {handleChange} name = "amount"/>
                     </div>
                 </form>
                 

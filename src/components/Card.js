@@ -33,10 +33,10 @@ const Card = ({Object, index, deleteBot}) => {
     <div class = "card-top" style={{"background-color": colors[index%5].primaryColor}}></div>
     
     <div class = "task-holder">
-        <span class = "card-header" style={{"background-color": colors[index%5].secondaryColor, "border-radius": "10px"}}>{Object.ticker}</span>
+        <span class = "card-header" style={{ "background-color": colors[index%5].secondaryColor, "border-radius": "10px", 'width': '100%'}}>{Object.ticker}</span>
         <span className = "mt-3">Stop Loss: <b>{Object.StopLoss}</b></span>
         <span className = "mt-3">Take Profit: <b>{Object.TakeProfit}</b></span>
-        <span className = "mt-3">Investment: <b>{Object.AmountToBeInvested}</b></span>
+        <span className = "mt-3">Leverage: <b>{Object.leverage}</b></span>
 
         <div style={{"position": "absolute", "right" : "20px", "bottom" : "150px"}}>
             <b><i class="fas fa-trash-alt" style = {{"color" : 'red', "cursor" : "pointer"}}  onClick = {handleDelete}></i></b>
