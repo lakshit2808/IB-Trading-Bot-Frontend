@@ -28,7 +28,7 @@ const Popup = ({modal, toggle, save}) => {
         taskObj["ticker"] = ticker
         taskObj["StopLoss"] = stoploss
         taskObj["TakeProfit"] = takeprofit
-        taskObj["AmountToBeInvested"] = amount
+        taskObj["leverage"] = amount
         save(taskObj)
 
     }
@@ -50,7 +50,7 @@ const Popup = ({modal, toggle, save}) => {
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Take Profit:</label>
-                        <input type="number" step="0.001" className = "form-control" placeholder='2.0' value = {takeprofit} onChange = {handleChange} name = "takeprofit"/>
+                        <input type="number" step="0.001" className = "form-control" placeholder='4.0' value = {takeprofit} onChange = {handleChange} name = "takeprofit"/>
                     </div>
                     <div className = "form-group" style={{marginBottom: "10px"}}>
                         <label>Investment:</label>
