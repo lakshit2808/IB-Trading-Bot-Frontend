@@ -28,7 +28,7 @@ const Popup = ({modal, toggle, save}) => {
         taskObj["ticker"] = ticker
         taskObj["StopLoss"] = stoploss
         taskObj["TakeProfit"] = takeprofit
-        taskObj["leverage"] = amount
+        taskObj["AmountToBeInvested"] = amount
         save(taskObj)
 
     }
