@@ -8,7 +8,7 @@ const BotList = () => {
   const [botList, setBotList] = useState([])
 
   const deleteBotHandler = (index,ticker) => {
-    const encoded = encodeURI(`https://api-tradingview.herokuapp.com/v1/bot1/userinput?ticker=${ticker}`);
+    const encoded = encodeURI(`https://tradingviewsignal.herokuapp.com/v1/bot1/userinput?ticker=${ticker}`);
     let tempList = botList
     botList.splice(index, 1)
     setBotList(tempList)
@@ -20,7 +20,7 @@ const BotList = () => {
   };
 
   useEffect(() =>{
-    axios.get('https://api-tradingview.herokuapp.com/v1/bot1/userinput')
+    axios.get('https://tradingviewsignal.herokuapp.com/v1/bot1/userinput')
     .then(res => {
       setBotList(res.data);
     })
@@ -28,8 +28,8 @@ const BotList = () => {
 
 
   const addBotHandler = (botData) => {
-    axios.post('https://api-tradingview.herokuapp.com/v1/bot1/userinput', {
-      'ticker': botData.ticker, 'StopLoss': botData.StopLoss, 'TakeProfit': botData.TakeProfit, 'leverage': botData.AmountToBeInvested})
+    axios.post('https://tradingviewsignal.herokuapp.com/v1/bot1/userinput', {
+      'ticker': botData.ticker, 'StopLoss': botData.StopLoss, 'TakeProfit': botData.TakeProfit, 'AmountToBeInvested': botData.AmountToBeInvested})
       .then(res => console.log(res))
   };
 
