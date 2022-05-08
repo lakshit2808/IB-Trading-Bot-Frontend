@@ -38,7 +38,7 @@ const Card = ({Object, index, deleteBot}) => {
         <span className = "mt-3">Take Profit: <b>{Object.TakeProfit}</b></span>
         <span className = "mt-3">Investment: <b>{Object.AmountToBeInvested}</b></span>
 
-        <div style={{"position": "absolute", "right" : "20px", "bottom" : "150px"}}>
+        <div className='delIcom'>
             <b><i class="fas fa-trash-alt" style = {{"color" : 'red', "cursor" : "pointer"}}  onClick = {handleDelete}></i></b>
         </div>
 

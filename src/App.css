@@ -1,10 +1,11 @@
 .header{
   height: 200px;
-  width: 90%;
+  width: 91%;
   background-color: #75e179;
   padding-top: 50px;
   border-radius: 30px;
   margin: auto;
+  float: right;
   margin-top: 10px;
 }
 .card-container{
@@ -46,17 +47,31 @@
 }
 
 .task-container{
-  height: 600px;
-  width: 100%;
+  height: auto;
+  width: 108%;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
   padding : 40px 263px;
 }
 
+.delIcom{
+  position: absolute;
+  right: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .task-container{
-    padding : 40px 100px;
+    padding: 15px 43px;
+    width: 105%;
+
+  }
+  .task-holder{
+    position: inherit;
+  }
+  .delIcom{
+    position: fixed;
+    right: 63px;
   }
 }
   
