@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo/interactive-brokers.jpg";
-import user from "../assets/user.jpg";
+import logo from "./assets/logo/interactive-brokers.jpg";
+import user from "./assets/user.jpg";
 
 import MenuItem from "./MenuItem";
 
