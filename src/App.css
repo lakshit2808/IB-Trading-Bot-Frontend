@@ -69,9 +69,10 @@
   .task-holder{
     position: inherit;
   }
-  .delIcom{
-    position: fixed;
-    right: 63px;
+  .delIcom {
+    position: static;
+    right: 0;
+    margin-left: 14rem;
   }
 }
   
