@@ -10,7 +10,6 @@ import IbFrontend from './components/IbFrontend';
 
 function App() {
   const [inactive, setInactive] = useState(false);
-
   return (
     <div className="App">
       <Router>

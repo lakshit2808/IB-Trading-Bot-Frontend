@@ -40,7 +40,7 @@ body{
 .side-menu{
     position: fixed;
     background: #000;
-    width: 300px;
+    width: 240px;
     height: 100%;
     box-sizing: border-box;
     padding: 30px 20px;
@@ -123,10 +123,6 @@ body{
     color: rgb(255, 117, 117);
 }
 
-
-
-
-
 .side-menu .main-menu{
     margin: 5px 0;
     position: relative;
@@ -135,10 +131,6 @@ body{
     overflow-x: hidden;
     position: absolute;
     left: -11px;
-}
-/* not required any more */
-.side-menu.inactive .main-menu{
-   
 }
 
 .side-menu .main-menu .menu-item .menu-icon{
@@ -267,4 +259,10 @@ body{
 
 .container.inactive{
     margin-left: 80px;
+}
+
+
+@media screen and (max-width: 600px){
+
+    
 }

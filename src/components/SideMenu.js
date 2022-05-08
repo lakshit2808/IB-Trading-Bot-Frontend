@@ -41,7 +41,13 @@ export const menuItems = [
 ];
 
 const SideMenu = (props) => {
-  const [inactive, setInactive] = useState(false);
+  var mediaWidth = window.matchMedia("(max-width: 650px)")
+  let sidebarStatus = false
+  if (mediaWidth.matches){
+    sidebarStatus = true
+  }
+
+  const [inactive, setInactive] = useState(sidebarStatus);
   props.onCollapse(inactive);
   useEffect(() => {
     if (inactive) {

@@ -75,6 +75,8 @@
     right: 0;
     margin-left: 14rem;
   }
+  .header{
+    width: 91%;}
 }
   
 @media (min-width: 396px) and (max-width: 430px) {
