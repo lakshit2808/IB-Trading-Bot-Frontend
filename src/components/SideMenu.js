@@ -42,13 +42,12 @@ export const menuItems = [
 
 const SideMenu = (props) => {
   const [inactive, setInactive] = useState(false);
-
+  props.onCollapse(inactive);
   useEffect(() => {
     if (inactive) {
       removeActiveClassFromSubMenu();
     }
-
-    props.onCollapse(inactive);
+   
   }, [inactive]);
 
   const removeActiveClassFromSubMenu = () => {
@@ -115,7 +114,7 @@ const SideMenu = (props) => {
         </div>
         <div className="user-info">
           <h5>Developed By:</h5>
-          <a style={{color: 'white'}} target="_blank" href="https://www.linkedin.com/in/lakshit2808" >Lakshit</a>
+          <a style={{color: 'white'}} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lakshit2808" >Lakshit</a>
         </div>
       </div>
     </div>
