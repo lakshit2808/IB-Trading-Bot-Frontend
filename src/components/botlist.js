@@ -51,7 +51,7 @@ const BotList = () => {
   return (
     <>
     <div className='header text-center'>
-      <h3>Interactive Broker's Trading Bots</h3>
+      <h3 className='header-text'>Interactive Broker's Trading Bots</h3>
       <button className='btn btn-primary mt-2'  onClick = {() => setModal(true)}>Create Bot</button>
     </div>
 

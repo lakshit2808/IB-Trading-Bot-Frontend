@@ -1,6 +1,6 @@
 .header{
   height: 200px;
-  width: 91%;
+  width: 85%;
   background-color: #75e179;
   padding-top: 50px;
   border-radius: 30px;
@@ -8,6 +8,7 @@
   float: right;
   margin-top: 10px;
 }
+
 .card-container{
   height: 300px;
   width: 300px;
@@ -76,3 +77,8 @@
   }
 }
   
+@media (min-width: 396px) and (max-width: 430px) {
+  .header-text{
+    font-size: 25px;
+  }
+}
