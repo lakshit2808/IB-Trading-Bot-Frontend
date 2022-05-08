@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import Popup from './popupmodal/popup';
 import axios from 'axios';
 import Card from './Card';
-import { Link } from 'react-router-dom';
 
 const BotList = () => {
   const [modal, setModal] = useState(false);
