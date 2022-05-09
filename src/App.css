@@ -61,6 +61,12 @@
   right: 20px;
 }
 
+.trade-info-container{
+    display: flex;
+    justify-content: center;
+    margin:auto
+}
+
 @media screen and (max-width: 600px) {
   .task-container{
     padding: 15px 43px;

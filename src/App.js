@@ -6,6 +6,10 @@ import SideMenu, { menuItems } from "./components/SideMenu";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { useState } from "react";
 import IbFrontend from './components/IbFrontend';
+import TradeHistory from './components/TradeInfo/TradeHistory';
+import PositionHandling from './components/TradeInfo/PositionHandling';
+import PortfolioAnalytics from './components/TradeInfo/PortfolioAnalytics';
+import LogIn from './components/LogIn/LogIn';
 
 
 function App() {
@@ -31,11 +35,44 @@ function App() {
                 ) : (
                   <div className="content"></div>
                 )}
+
+                {menu.name === "Trade Info" ? (
+                  <div className="content">
+                  <TradeHistory/>
+                  </div>
+                ) : (
+                  <div className="content"></div>
+                )}
+
+                {menu.name === "Logout" ? (
+                  <div className="content">
+                  <LogIn/>
+                  </div>
+                ) : (
+                  <div className="content"></div>
+                )}
+
               </Route>
               {menu.subMenus && menu.subMenus.length > 0
                 ? menu.subMenus.map((subMenu, i) => (
                     <Route key={subMenu.name} path={subMenu.to}>
-                      <h1>{subMenu.name}</h1>
+
+                    {subMenu.name === "Position Handling" ? (
+                      <div className="content">
+                      <PositionHandling/>
+                      </div>
+                    ) : (
+                      <div className="content"></div>
+                    )}
+
+                    {subMenu.name === "Portfolio Analytics" ? (
+                      <div className="content">
+                      <PortfolioAnalytics/>
+                      </div>
+                    ) : (
+                      <div className="content"></div>
+                    )}
+
                     </Route>
                   ))
                 : null}

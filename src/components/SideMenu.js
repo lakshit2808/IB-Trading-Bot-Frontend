@@ -14,18 +14,18 @@ export const menuItems = [
   {
     name: "Trade Info",
     exact: true,
-    to: "/tradeinfo",
-    iconClassName: "bi bi-clock-history"
+    to: `/tradeinfo`,
+    iconClassName: "bi bi-clipboard-data",
+    subMenus: [
+      { name: "Position Handling", to: "/tradeinfo/positions" },
+      { name: "Portfolio Analytics", to: "/tradeinfo/analytics" },
+    ],
   },
   {
-    name: "Content",
+    name: "Logout",
     exact: true,
-    to: `/content`,
-    iconClassName: "bi bi-speedometer2",
-    subMenus: [
-      { name: "Courses", to: "/content/courses" },
-      { name: "Videos", to: "/content/videos" },
-    ],
+    to: "/logout",
+    iconClassName: "bi bi-box-arrow-left"
   },
   // { name: "Design", to: `/design`, iconClassName: "bi bi-vector-pen" },
   // {
