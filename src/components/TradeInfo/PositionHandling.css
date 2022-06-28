@@ -1,0 +1,97 @@
+.position-handling-container{
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 17rem;
+    padding: 0px;
+    margin-left: 14pc;
+    border-radius: 20px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: 0px 0px 10px rgb(0 0 0);
+}
+
+.position-handling-container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50rem;
+}
+
+.ticker-name{
+    font-size: 2rem;
+    color: rgb(0 0 0);
+    position: relative;
+    left: 6px;
+
+
+}
+
+.close-position-header{
+    font-size: 1.5rem;
+    color: rgb(0 0 0);
+    margin-bottom: 10px;
+    position: relative;
+    left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#close-position-button{
+    float: right;
+    margin-left: auto;
+    top: 5px;
+    right: 20px;
+    border-radius: 30px;
+    width: 17%;
+}
+
+.position-grid{
+    border-radius: 15px;
+    width: 94%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 13px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: 0px 0px 10px rgb(0 0 0);
+    text-align: center;
+}
+
+#close-position-icon{
+    position: relative;
+    left: 5px;
+}
+
+.position-grid-text{
+    font-size: 1.5rem;
+    color: rgb(0 0 0);
+    margin-left: 5px;
+    margin-top: 5px;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px){
+    .position-handling-container{
+        margin-left: 0pc;
+
+    }
+    #close-position-icon{
+        transform: scale(1.5);
+        left: 0px;
+    }
+    
+    #close-position-text{
+        display: none;
+    }
+    .position-grid-text{
+        font-size: .7rem;
+    }
+    
+    .position-grid{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+}
